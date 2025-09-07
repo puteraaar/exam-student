@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Student - ASTS 2025</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="bg-fuchsia-50">
+        <section id="hero-section" class="py-8 bg-fuchsia-100">
+            <!-- Container Hero -->
+            <div class="max-w-4xl mx-auto flex flex-col text-center items-center justify-center">
+                <h1 class="font-bold text-3xl text-indigo-950 mb-2.5">Jadwal Ujian Tengah Semester</h1>
+                <p class="text-gray-500 mb-4 w-100">Kelas X • Semester Ganjil 2025</p>
+
+                <div class="flex gap-4 text-sm items-center justify-center">
+                    <div class="flex items-center gap-1">
+                        <div class="text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M15 19l2 2l4 -4" /></svg>
+                        </div>
+                        <span>15-24 September 2025</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div class="text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+                        </div>
+                        <span>9 Hari Ujian</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jadwal-section" class="py-8">
+            <div class="max-w-4xl mx-auto pb-8 px-4 md:px-0 flex flex-col gap-6">
+                <!-- Informasi Ketentuan Ujian -->
+                <div class="bg-amber-50 py-8 px-6 border border-amber-300 text-amber-800 rounded-lg">
+                    <h3 class="text-md font-semibold ">Ketentuan Ujian</h3>
+                    <ul class="list-disc ps-5">
+                        <li>Siswa wajib hadir 15 menit sebelum ujian dimulai</li>
+                        <li>Tidak diperkenankan menggunakan HP selama ujian berlangsung</li>
+                        <li>Membawa alat tulis lengkap</li>
+                    </ul>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Senin -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Senin</h3>
+                                <p class="text-gray-500 text-sm">15 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">15 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">IGCSE Mathematics</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-800 text-white px-2 py-1 rounded-full text-center text-xs w-max">Cambridge Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">15 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Setoran Hafalan</div>
+                                <div class="col-span-1 text-gray-700 bg-green-600 text-white px-2 py-1 rounded-full text-center text-xs w-max">Tahfidz Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">15 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Setoran Hafalan</div>
+                                <div class="col-span-1 text-gray-700 bg-amber-600 text-white px-2 py-1 rounded-full text-center text-xs w-max">ICT Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">15 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">IGCSE Biology</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-800 text-white px-2 py-1 rounded-full text-center text-xs w-max">Cambridge Program</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Selasa -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Selasa</h3>
+                                <p class="text-gray-500 text-sm">16 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">16 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">ICT</div>
+                                <div class="col-span-1 text-gray-700 bg-amber-600 text-white px-2 py-1 rounded-full text-center text-xs w-max">ICT Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">16 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">IGCSE English</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-800 text-white px-2 py-1 rounded-full text-center text-xs w-max">Cambridge Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">16 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Tahfidz</div>
+                                <div class="col-span-1 text-gray-700 bg-green-600 text-white px-2 py-1 rounded-full text-center text-xs w-max">Tahfidz Program</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Rabu -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Rabu</h3>
+                                <p class="text-gray-500 text-sm">17 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">17 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Bahasa Indonesia</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">17 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Islamic Studies</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Kamis -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Kamis</h3>
+                                <p class="text-gray-500 text-sm">18 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">18 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Mathematics</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">18 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">History</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Jumat -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Jumat</h3>
+                                <p class="text-gray-500 text-sm">19 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">19 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Chemistry</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">19 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Physical Education</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Sabtu -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Sabtu</h3>
+                                <p class="text-gray-500 text-sm">20 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">20 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Biology</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">20 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Sociology</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Senin -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Senin</h3>
+                                <p class="text-gray-500 text-sm">22 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">22 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Physics</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">22 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Pancasila Education</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Selasa -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Selasa</h3>
+                                <p class="text-gray-500 text-sm">23 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">23 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Informatics</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">23 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Economics</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Jadwal Ujian : Rabu -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
+                    <!-- Header -->
+                    <div class="p-6 bg-sky-50">
+                        <div class="flex items-center gap-4">
+                            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                            <div>
+                                <h3 class="font-bold text-blue-600 text-xl">Rabu</h3>
+                                <p class="text-gray-500 text-sm">24 September 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Table -->
+                    <div class="overflow-x-auto m-4">
+                        <div class="p-2 md:w-full w-max">
+                            <div class="grid grid-cols-4 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
+                                <div class="col-span-1">Tanggal</div>
+                                <div class="col-span-1">Waktu</div>
+                                <div class="col-span-1">Mata Pelajaran</div>
+                                <div class="col-span-1">Kelas/Program</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">24 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Compulsory English</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600  px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="col-span-1 text-gray-800">24 September 2025</div>
+                                <div class="col-span-1 text-gray-800">07.30 - 09.30</div>
+                                <div class="col-span-1 text-blue-600">Geography</div>
+                                <div class="col-span-1 text-gray-700 bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-center text-xs w-max">Semua Kelas</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="p-6 text-center">
+        <p class="text-sm text-gray-500">© 2025 Tim IT SMA ABBS SUKOHARJO ✨</p>
+    </footer>
+</body>
+</html>
