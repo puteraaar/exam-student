@@ -11,7 +11,7 @@
 <body>
     <main class="bg-fuchsia-50">
         <section id="hero-section" class="py-8 bg-fuchsia-100">
-            <div class="max-w-5xl mx-auto w-screen pb-6 px-4">
+            <div class="max-w-5xl mx-auto pb-6 px-4">
                 <button onclick="history.back()" class="flex gap-1 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 cursor-pointer">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
                     Kembali
@@ -81,109 +81,56 @@
 
                     <!-- Body Table -->
                     <div class="overflow-x-auto m-4">
-                        <table class="p-2 md:w-full w-max">
+                        <table class="p-2 md:w-full w-max text-left">
                             <thead>
                                 <tr>
                                     <th class="p-2 text-sm font-semibold text-gray-500 border-b border-gray-300">Sesi</th>
                                     <th class="p-2 text-sm font-semibold text-gray-500 border-b border-gray-300">Waktu</th>
-                                    <th class="p-2 text-sm font-semibold text-gray-500 border-b border-gray-300">Mata Pelajaran</th>
                                     <th class="p-2 text-sm font-semibold text-gray-500 border-b border-gray-300">Durasi</th>
+                                    <th class="p-2 text-sm font-semibold text-gray-500 border-b border-gray-300">Mata Pelajaran</th>
                                     <th class="p-2 text-sm font-semibold text-gray-500 border-b border-gray-300">Kelas/Program</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                
+                                <tr>
+                                    <td class="p-4 border-b border-gray-100" rowspan="3">
+                                        <span class="bg-red-200 rounded-full px-[12px] py-[5px]">1</span>
+                                    </td>
+                                    <td class="p-4 border-b border-gray-100 text-gray-800 valign-middle" rowspan="3">07.20 - 09.20</td>
+                                    <td class="p-4 border-b border-gray-100 text-gray-800 valign-middle" rowspan="3">120 Menit</td>
+                                    <td class="p-4 border-b border-gray-100 text-blue-600">IGCSE Mathematics</td>
+                                    <td class="p-4 border-b border-gray-100">
+                                        <span class="bg-indigo-800 text-white px-2 py-1 rounded-full text-xs">Cambridge Program</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-gray-100 text-blue-600">Persiapan Ujian Tahfidz</td>
+                                    <td class="p-4 border-b border-gray-100">
+                                        <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs">Tahfidz Program</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-gray-100 text-blue-600">Ujian Tahfidz</td>
+                                    <td class="p-4 border-b border-gray-100">
+                                        <span class="bg-amber-600 text-white px-2 py-1 rounded-full text-xs">ICT Program</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="p-4">
+                                        <span class="bg-blue-200 rounded-full px-[12px] py-[5px]">2</span>
+                                    </td>
+                                    <td class="p-4 text-gray-800">10.00 - 12.00</td>
+                                    <td class="p-4 text-gray-800">120 Menit</td>
+                                    <td class="p-4 text-blue-600">IGCSE Biology</td>
+                                    <td class="p-4">
+                                        <span class="bg-indigo-800 text-white px-2 py-1 rounded-full text-xs">Cambridge Program</span>
+                                    </td>
+                                </tr>
                             </tbody>
-                            <div class="grid grid-cols-5 gap-4 pb-2 text-sm font-semibold text-gray-500 border-b border-gray-200">
-                                <div class="col-span-1">Sesi</div>
-                                <div class="col-span-1">Waktu</div>
-                                <div class="col-span-1">Durasi</div>
-                                <div class="col-span-1">Mata Pelajaran</div>
-                                <div class="col-span-1">Kelas/Program</div>
-                            </div>
-                            <div class="grid grid-cols-5 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
-                                <div class="row-span-1 text-gray-800"><span class="bg-red-200 rounded-full px-[12px] py-[5px]">1</span></div>
-                                <div class="col-span-1 text-gray-800">07.20 - 09.20</div>
-                                <div class="col-span-1 text-gray-800">120 Menit</div>
-                                <div class="col-span-1 text-blue-600">IGCSE Mathematics</div>
-                                <div class="col-span-1 text-gray-700 bg-indigo-800 text-white px-2 py-1 rounded-full text-center text-xs w-max">Cambridge Program</div>
-                            </div>
-                            <div class="grid grid-cols-5 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
-                                <div class="col-span-1 text-gray-800"><span class="bg-red-200 rounded-full px-[12px] py-[5px]">1</span></div>
-                                <div class="col-span-1 text-gray-800">07.20 - 09.20</div>
-                                <div class="col-span-1 text-gray-800">120 Menit</div>
-                                <div class="col-span-1 text-blue-600">Persiapan Ujian Tahfidz</div>
-                                <div class="col-span-1 text-gray-700 bg-green-600 text-white px-2 py-1 rounded-full text-center text-xs w-max">Tahfidz Program</div>
-                            </div>
-                            <div class="grid grid-cols-5 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
-                                <div class="col-span-1 text-gray-800"><span class="bg-red-200 rounded-full px-[12px] py-[5px]">1</span></div>
-                                <div class="col-span-1 text-gray-800">07.20 - 09.20</div>
-                                <div class="col-span-1 text-gray-800">120 Menit</div>
-                                <div class="col-span-1 text-blue-600">Ujian Tahfidz</div>
-                                <div class="col-span-1 text-gray-700 bg-amber-600 text-white px-2 py-1 rounded-full text-center text-xs w-max">ICT Program</div>
-                            </div>
-                            <div class="grid grid-cols-5 gap-4 items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200">
-                                <div class="col-span-1 text-gray-800"><span class="bg-blue-200 rounded-full px-[12px] py-[5px]">2</span></div>
-                                <div class="col-span-1 text-gray-800">10.00 - 12.00</div>
-                                <div class="col-span-1 text-gray-800">120 Menit</div>
-                                <div class="col-span-1 text-blue-600">IGCSE Biology</div>
-                                <div class="col-span-1 text-gray-700 bg-indigo-800 text-white px-2 py-1 rounded-full text-center text-xs w-max">Cambridge Program</div>
-                            </div>
                         </table>
                     </div>
                 </div>
-
-    <div class="overflow-x-auto m-4">
-        <table class="text-left p-2 md:w-full w-max">
-            <thead>
-                <tr>
-                    <th class="p-2 text-sm font-semibold text-gray-500 border-b">Sesi</th>
-                    <th class="p-2 text-sm font-semibold text-gray-500 border-b">Waktu</th>
-                    <th class="p-2 text-sm font-semibold text-gray-500 border-b">Durasi</th>
-                    <th class="p-2 text-sm font-semibold text-gray-500 border-b">Mata Pelajaran</th>
-                    <th class="p-2 text-sm font-semibold text-gray-500 border-b">Kelas/Program</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="p-4 border-b border-gray-100 valign-middle" rowspan="3">
-                        <span class="bg-red-200 rounded-full px-3.5 py-1.5 font-semibold">1</span>
-                    </td>
-                    <td class="p-4 border-b border-gray-100 text-gray-800 valign-middle" rowspan="3">07.20 - 09.20</td>
-                    <td class="p-4 border-b border-gray-100 text-gray-800 valign-middle" rowspan="3">120 Menit</td>
-                    <td class="p-4 border-b border-gray-100 text-blue-600">IGCSE Mathematics</td>
-                    <td class="p-4 border-b border-gray-100">
-                        <span class="bg-indigo-800 text-white px-2 py-1 rounded-full text-xs">Cambridge Program</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-4 border-b border-gray-100 text-blue-600">Persiapan Ujian Tahfidz</td>
-                    <td class="p-4 border-b border-gray-100">
-                        <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs">Tahfidz Program</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-4 border-b border-gray-100 text-blue-600">Ujian Tahfidz</td>
-                    <td class="p-4 border-b border-gray-100">
-                        <span class="bg-amber-600 text-white px-2 py-1 rounded-full text-xs">ICT Program</span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="p-4">
-                        <span class="bg-blue-200 rounded-full px-3.5 py-1.5 font-semibold">2</span>
-                    </td>
-                    <td class="p-4 text-gray-800">10.00 - 12.00</td>
-                    <td class="p-4 text-gray-800">120 Menit</td>
-                    <td class="p-4 text-blue-600">IGCSE Biology</td>
-                    <td class="p-4">
-                        <span class="bg-indigo-800 text-white px-2 py-1 rounded-full text-xs">Cambridge Program</span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
 
                 <!-- Tabel Jadwal Ujian : Selasa -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
