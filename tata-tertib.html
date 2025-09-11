@@ -1,1 +1,76 @@
-asasdas
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Student - ASTS 2025</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="bg-fuchsia-50">
+        <section id="hero-section" class="py-8 bg-fuchsia-100">
+            <div class="max-w-5xl mx-auto pb-6 px-4">
+                <button onclick="history.back()" class="flex gap-1 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 cursor-pointer">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                    Kembali
+                </button>
+            </div>
+            <!-- Container Hero -->
+            <div class="max-w-4xl mx-auto flex flex-col text-center items-center justify-center">
+                <h1 class="font-bold text-3xl text-indigo-950 mb-2.5">Tata Tertib Siswa Ujian Tengah Semester</h1>
+                <p class="text-gray-500 mb-4 w-100">Kelas X • Semester Ganjil 2025</p>
+
+                <div class="flex gap-4 text-sm items-center justify-center">
+                    <div class="flex items-center gap-1">
+                        <div class="text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M15 19l2 2l4 -4" /></svg>
+                        </div>
+                        <span>15-24 September 2025</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div class="text-blue-500">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+                        </div>
+                        <span>9 Hari Ujian</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jadwal-section" class="py-8">
+            <div class="max-w-4xl mx-auto pb-8 px-4 md:px-0 flex flex-col gap-6">
+                <div class="relative w-full h-100">
+                    <iframe src="https://drive.google.com/file/d/1k5jaNf_7_Mx9L696wcU_ovdiIneoSYAv/preview" width="640" height="480" allow="autoplay" class="absolute inset-0 w-full h-full border-0 rounded-md"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="p-6 text-center">
+        <p class="text-sm text-gray-500">© 2025 Tim IT SMA ABBS SUKOHARJO ❤️</p>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const statusSpans = document.querySelectorAll('[data-status]');
+            const today = new Date();
+
+            statusSpans.forEach(span => {
+                const dateString = span.getAttribute('data-status');
+                const [day, month, year] = dateString.split('-').map(Number);
+
+                const scheduleDate = new Date(year, month - 1, day);
+
+                today.setHours(0, 0, 0, 0);
+
+                if (scheduleDate <= today) {
+                    span.classList.remove('hidden');
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
