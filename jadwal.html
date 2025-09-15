@@ -609,7 +609,7 @@
 
                 const scheduleDate = new Date(year, month - 1, day);
 
-                today.setHours(0, 0, 0, 0);
+                today.setHours(12, 0, 0, 0);
 
                 if (scheduleDate <= today) {
                     span.classList.remove('hidden');
