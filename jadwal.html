@@ -76,7 +76,7 @@
                             <div>
                                 <h3 class="font-bold text-blue-600 text-xl">Senin</h3>
                                 <p class="text-gray-500 text-sm">15 September 2025
-                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="15-09-2025">DONE</span>
+                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="15-09-2025" data-exam-time="12:00">DONE</span>
                                 </p>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                             <div>
                                 <h3 class="font-bold text-blue-600 text-xl">Selasa</h3>
                                 <p class="text-gray-500 text-sm">16 September 2025
-                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="16-09-2025">DONE</span>
+                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="16-09-2025" data-exam-time="12:00">DONE</span>
                                 </p>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                             <div>
                                 <h3 class="font-bold text-blue-600 text-xl">Rabu</h3>
                                 <p class="text-gray-500 text-sm">17 September 2025
-                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="17-09-2025">DONE</span>
+                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="17-09-2025" data-exam-time="12:00">DONE</span>
                                 </p>
                             </div>
                         </div>
@@ -269,7 +269,7 @@
                             <div>
                                 <h3 class="font-bold text-blue-600 text-xl">Kamis</h3>
                                 <p class="text-gray-500 text-sm">18 September 2025
-                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="18-09-2025">DONE</span>
+                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="18-09-2025" data-exam-time="12:00">DONE</span>
                                 </p>
                             </div>
                         </div>
@@ -324,7 +324,7 @@
                             <div>
                                 <h3 class="font-bold text-blue-600 text-xl">Jumat</h3>
                                 <p class="text-gray-500 text-sm">19 September 2025
-                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="19-09-2025">DONE</span>
+                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="19-09-2025" data-exam-time="12:00">DONE</span>
                                 </p>
                             </div>
                         </div>
@@ -434,7 +434,7 @@
                             <div>
                                 <h3 class="font-bold text-blue-600 text-xl">Senin</h3>
                                 <p class="text-gray-500 text-sm">22 September 2025
-                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="22-09-2025">DONE</span>
+                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="22-09-2025" data-exam-time="12:00">DONE</span>
                                 </p>
                             </div>
                         </div>
@@ -489,7 +489,7 @@
                             <div>
                                 <h3 class="font-bold text-blue-600 text-xl">Selasa</h3>
                                 <p class="text-gray-500 text-sm">23 September 2025
-                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="23-09-2025">DONE</span>
+                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="23-09-2025" data-exam-time="12:00">DONE</span>
                                 </p>
                             </div>
                         </div>
@@ -544,7 +544,7 @@
                             <div>
                                 <h3 class="font-bold text-blue-600 text-xl">Rabu</h3>
                                 <p class="text-gray-500 text-sm">24 September 2025
-                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="24-09-2025">DONE</span>
+                                    <span class="text-green-600 font-bold ml-2 hidden" data-status="24-09-2025" data-exam-time="12:00">DONE</span>
                                 </p>
                             </div>
                         </div>
@@ -603,13 +603,17 @@
             const statusSpans = document.querySelectorAll('[data-status]');
             const today = new Date();
 
+            console.log(today);
+
             statusSpans.forEach(span => {
                 const dateString = span.getAttribute('data-status');
+                const timeString = span.getAttribute('data-exam-time');
                 const [day, month, year] = dateString.split('-').map(Number);
+                const [hours, minutes] = timeString.split(':').map(Number);
 
-                const scheduleDate = new Date(year, month - 1, day);
+                const scheduleDate = new Date(year, month - 1, day, hours, minutes);
 
-                today.setHours(12, 0, 0, 0);
+                today.setHours(0, 0, 0, 0);
 
                 if (scheduleDate <= today) {
                     span.classList.remove('hidden');
