@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal Ujian - PSTS 2026</title>
+    <title>Jadwal Ujian - PSAS 2025</title>
     <link rel="icon" type="image/x-icon" href="logo.png">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -19,21 +19,21 @@
                 </button>
             </div>
             <div class="max-w-4xl mx-auto flex flex-col text-center items-center justify-center">
-                <h1 class="font-bold text-3xl text-indigo-950 mb-2.5">Jadwal Ujian Tengah Semester</h1>
-                <p class="text-gray-500 mb-4 w-100">Kelas X • Semester Genap 2026</p>
+                <h1 class="font-bold text-3xl text-indigo-950 mb-2.5">Jadwal Ujian Akhir Semester</h1>
+                <p class="text-gray-500 mb-4 w-100">Kelas X • Semester Ganjil 2025</p>
 
                 <div class="flex gap-4 text-sm items-center justify-center">
                     <div class="flex items-center gap-1">
                         <div class="text-blue-500">
                             <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M15 19l2 2l4 -4" /></svg>
                         </div>
-                        <span>26 February - 7 March 2026</span>
+                        <span>24 November - 6 December 2025</span>
                     </div>
                     <div class="flex items-center gap-1">
                         <div class="text-blue-500">
                             <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
                         </div>
-                        <span>9 Hari Ujian</span>
+                        <span>12 Hari Ujian</span>
                     </div>
                 </div>
             </div>
@@ -75,12 +75,74 @@
         // Data Jadwal Ujian
         const jadwalUjian = [
             {
-                "hari": "Kamis",
-                "tanggal": "26 February 2026",
+                "hari": "Senin",
+                "tanggal": "24 November 2025",
                 "sesi_ujian": [
                     {
                         "sesi": 1,
-                        "waktu": "07.40 - 09.40",
+                        "waktu": "07.30 - 09.30",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "IGCSE Mathematics", "program": "Cambridge Program"}
+                        ]
+                    },
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 10.30",
+                        "durasi": "240 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Preparation for Tahfidz", "program": "Tahfidz Program"},
+                            {"nama": "Tahfidz (Praktik)", "program": "ICT Program"}
+                        ]
+                    },
+                    {
+                        "sesi": 2,
+                        "waktu": "10.00 - 12.00",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "IGCSE Biology", "program": "Cambridge Program"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "hari": "Selasa",
+                "tanggal": "25 November 2025",
+                "sesi_ujian": [
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 09.30",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "IGCSE English", "program": "Cambridge Program"},
+                            {"nama": "ICT", "program": "ICT Program"}
+                        ]
+                    },
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 10.30",
+                        "durasi": "240 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Tahfidz (Praktik)", "program": "Tahfidz Program"}
+                        ]
+                    },
+                    {
+                        "sesi": 2,
+                        "waktu": "10.00 - 12.00",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Tahfidz (Praktik)", "program": "Cambridge Program"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "hari": "Rabu",
+                "tanggal": "26 November 2025",
+                "sesi_ujian": [
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 09.30",
                         "durasi": "120 Menit",
                         "mata_pelajaran": [
                             {"nama": "Bahasa Indonesia", "program": "Semua Kelas"}
@@ -88,7 +150,7 @@
                     },
                     {
                         "sesi": 2,
-                        "waktu": "10.30 - 11.40",
+                        "waktu": "10.15 - 11.25",
                         "durasi": "70 Menit",
                         "mata_pelajaran": [
                             {"nama": "Islamic Studies", "program": "Semua Kelas"}
@@ -97,8 +159,110 @@
                 ]
             },
             {
+                "hari": "Kamis",
+                "tanggal": "27 November 2025",
+                "sesi_ujian": [
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 09.30",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Chemistry", "program": "Semua Kelas"}
+                        ]
+                    },
+                    {
+                        "sesi": 2,
+                        "waktu": "10.15 - 11.25",
+                        "durasi": "70 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Physical Education", "program": "Semua Kelas"}
+                        ]
+                    }
+                ]
+            },
+            {
                 "hari": "Jumat",
-                "tanggal": "27 February 2026",
+                "tanggal": "28 November 2025",
+                "sesi_ujian": [
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 09.30",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Biology", "program": "Semua Kelas"}
+                        ]
+                    },
+                    {
+                        "sesi": 2,
+                        "waktu": "10.10 - 11.00",
+                        "durasi": "60 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "History", "program": "Semua Kelas"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "hari": "Sabtu",
+                "tanggal": "29 November 2025",
+                "sesi_ujian": [
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 09.30",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Compulsory English", "program": "Semua Kelas"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "hari": "Senin",
+                "tanggal": "1 December 2025",
+                "sesi_ujian": [
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 09.30",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Physics", "program": "Semua Kelas"}
+                        ]
+                    },
+                    {
+                        "sesi": 2,
+                        "waktu": "10.15 - 11.25",
+                        "durasi": "70 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Pancasila Education", "program": "Semua Kelas"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "hari": "Selasa",
+                "tanggal": "2 December 2025",
+                "sesi_ujian": [
+                    {
+                        "sesi": 1,
+                        "waktu": "07.30 - 09.30",
+                        "durasi": "120 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Informatics", "program": "Semua Kelas"}
+                        ]
+                    },
+                    {
+                        "sesi": 2,
+                        "waktu": "10.15 - 11.15",
+                        "durasi": "60 Menit",
+                        "mata_pelajaran": [
+                            {"nama": "Tahfidzul Quran", "program": "Semua Kelas"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "hari": "Rabu",
+                "tanggal": "3 December 2025",
                 "sesi_ujian": [
                     {
                         "sesi": 1,
@@ -110,110 +274,30 @@
                     },
                     {
                         "sesi": 2,
-                        "waktu": "10.00 - 11.10",
-                        "durasi": "70 Menit",
+                        "waktu": "10.15 - 11.15",
+                        "durasi": "60 Menit",
                         "mata_pelajaran": [
-                            {"nama": "Sociology", "program": "Semua Kelas"}
-                        ]
-                    }
-                ]
-            },
-            {
-                "hari": "Sabtu",
-                "tanggal": "28 February 2026",
-                "sesi_ujian": [
-                    {
-                        "sesi": 1,
-                        "waktu": "07.40 - 09.40",
-                        "durasi": "120 Menit",
-                        "mata_pelajaran": [
-                            {"nama": "Chemistry", "program": "Semua Kelas"}
-                        ]
-                    }
-                ]
-            },
-            {
-                "hari": "Senin",
-                "tanggal": "2 March 2026",
-                "sesi_ujian": [
-                    {
-                        "sesi": 1,
-                        "waktu": "07.40 - 09.40",
-                        "durasi": "120 Menit",
-                        "mata_pelajaran": [
-                            {"nama": "Biology", "program": "Semua Kelas"}
-                        ]
-                    },
-                    {
-                        "sesi": 2,
-                        "waktu": "10.30 - 11.40",
-                        "durasi": "70 Menit",
-                        "mata_pelajaran": [
-                            {"nama": "Pancasila Education", "program": "Semua Kelas"}
-                        ]
-                    }
-                ]
-            },
-            {
-                "hari": "Selasa",
-                "tanggal": "3 March 2026",
-                "sesi_ujian": [
-                    {
-                        "sesi": 1,
-                        "waktu": "07.40 - 09.40",
-                        "durasi": "120 Menit",
-                        "mata_pelajaran": [
-                            {"nama": "Physics", "program": "Semua Kelas"}
-                        ]
-                    },
-                    {
-                        "sesi": 2,
-                        "waktu": "10.30 - 11.40",
-                        "durasi": "70 Menit",
-                        "mata_pelajaran": [
-                            {"nama": "History", "program": "Semua Kelas"}
-                        ]
-                    }
-                ]
-            },
-            {
-                "hari": "Rabu",
-                "tanggal": "4 March 2026",
-                "sesi_ujian": [
-                    {
-                        "sesi": 1,
-                        "waktu": "07.40 - 09.10",
-                        "durasi": "90 Menit",
-                        "mata_pelajaran": [
-                            {"nama": "Informatics", "program": "Semua Kelas"}
-                        ]
-                    },
-                    {
-                        "sesi": 1,
-                        "waktu": "10.30 - 11.40",
-                        "durasi": "70 Menit",
-                        "mata_pelajaran": [
-                            {"nama": "Economics", "program": "Semua Kelas"}
+                            {"nama": "Bahasa Jawa", "program": "Semua Kelas"}
                         ]
                     }
                 ]
             },
             {
                 "hari": "Kamis",
-                "tanggal": "5 March 2026",
+                "tanggal": "4 December 2025",
                 "sesi_ujian": [
                     {
                         "sesi": 1,
-                        "waktu": "07.40 - 09.40",
+                        "waktu": "07.30 - 09.30",
                         "durasi": "120 Menit",
                         "mata_pelajaran": [
-                            {"nama": "Compulsory English", "program": "Semua Kelas"}
+                            {"nama": "Economy", "program": "Semua Kelas"}
                         ]
                     },
                     {
                         "sesi": 2,
-                        "waktu": "10.30 - 11.40",
-                        "durasi": "70 Menit",
+                        "waktu": "10.15 - 11.15",
+                        "durasi": "60 Menit",
                         "mata_pelajaran": [
                             {"nama": "Geography", "program": "Semua Kelas"}
                         ]
@@ -222,39 +306,36 @@
             },
             {
                 "hari": "Jumat",
-                "tanggal": "6 March 2026",
+                "tanggal": "5 December 2025",
                 "sesi_ujian": [
                     {
                         "sesi": 1,
-                        "waktu": "07.00 - 09.00",
-                        "durasi": "120 Menit",
+                        "waktu": "07.30 - 08.40",
+                        "durasi": "70 Menit",
                         "mata_pelajaran": [
-                            {"nama": "IGCSE Biology", "program": "Cambridge Program"},
-                            {"nama": "ICT", "program": "ICT Program"},
-                            {"nama": "Tahfidz", "program": "Tahfidz Program"}
+                            {"nama": "Sociology", "program": "Semua Kelas"}
                         ]
                     },
                     {
                         "sesi": 2,
-                        "waktu": "09.30 - 11.30",
-                        "durasi": "120 Menit",
+                        "waktu": "09.00 - 10.00",
+                        "durasi": "60 Menit",
                         "mata_pelajaran": [
-                            {"nama": "IGCSE English", "program": "Cambridge Program"}
+                            {"nama": "SBK (Seni Budaya)", "program": "Semua Kelas"}
                         ]
                     }
                 ]
             },
             {
                 "hari": "Sabtu",
-                "tanggal": "7 March 2026",
+                "tanggal": "6 December 2025",
                 "sesi_ujian": [
                     {
                         "sesi": 1,
-                        "waktu": "07.40 - 09.40",
-                        "durasi": "120 Menit",
+                        "waktu": "07.30 - 09.30",
+                        "durasi": "70 Menit",
                         "mata_pelajaran": [
-                            {"nama": "IGCSE Mathematics", "program": "Cambridge Program"},
-                            {"nama": "English Score dan Susulan", "program": "Program Lain"}
+                            {"nama": "English Score", "program": "Semua Kelas"}
                         ]
                     }
                 ]
